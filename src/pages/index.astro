@@ -1,0 +1,27 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Navbar } from '@/app/components/Navbar';
+import { Hero } from '@/app/components/Hero';
+import { Services } from '@/app/components/Services';
+import { Diagnosis } from '@/app/components/Diagnosis';
+import { About } from '@/app/components/About';
+import { Team } from '@/app/components/Team';
+import { Testimonials } from '@/app/components/Testimonials';
+import { Contact } from '@/app/components/Contact';
+import { Opinions } from '@/app/components/Opinions';
+import { Footer } from '@/app/components/Footer';
+---
+
+<MainLayout title="AutoTech Mecánica - Taller Especializado">
+	<Navbar client:load />
+	<main>
+		<Hero client:load />
+		<Services client:visible />
+		<Diagnosis client:visible />
+		<About client:visible />
+		<Team client:visible />
+		<Contact client:visible />
+		<Opinions client:visible />
+	</main>
+	<Footer />
+</MainLayout>

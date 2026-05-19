@@ -1,0 +1,19 @@
+# Astro
+.astro/
+dist/
+
+# Dependencies
+node_modules/
+
+# Vercel
+.vercel/
+
+# Environment variables
+.env
+.env.production
+.env.development
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
